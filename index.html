@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schiffsmiete - Ihr Traum auf dem Wasser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu nav-left">
+                <li><a href="#fakten">FAKTEN</a></li>
+                <li><a href="#bilder">BILDER</a></li>
+            </ul>
+            <div class="logo">
+                <a href="#home">NORDSTJERNEN</a>
+            </div>
+            <ul class="nav-menu nav-right">
+                <li><a href="#toerns">TÖRNS</a></li>
+                <li><a href="#impressum">IMPRESSUM</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Willkommen auf den Seiten des Traditionsseglers <br>Nordstjernen!</h1>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToNext()">
+            <div class="scroll-text">SCROLLEN</div>
+            <div class="scroll-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="fakten">
+        <div class="about-container">
+            <div class="about-left">
+                <div class="about-image-1">
+                    <img src="about-image-1.png" alt="Nordstjernen sailing ship">
+                </div>
+                <div class="about-content-left">
+                    <p>Mit der Nordstjernen sind wir auch bei vielen Hafenfesten vertreten. Laden Sie als <strong>EVENT</strong> Ihre Geschäftspartner, Ihre Hochzeitsgäste oder ein Geburtstagskind zu einer Fahrt auf unserem Haikutter ein. Ob Hamburger Hafengeburtstag, Kieler Woche, Hanse Sail Rostock, Rum Regatta Flensburg, usw., fragen Sie nach unseren Angeboten und freien Terminen.</p>
+                    <p>Sie wollen als <strong>Aktion</strong> vielleicht nur ein paar spannende Stunden mit Kollegen, Mitarbeitern, Auszubildenden, Sportfreunden oder Geschäftspartnern an Bord der Nordstjernen verbringen? Mit Übernachtung an Bord?</p>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-header">
+                    <div class="about-line"></div>
+                    <h2 class="about-title">ÜBER NORDSTJERNEN</h2>
+                </div>
+                <div class="about-content-right">
+                    <p>1920 als Haikutter in Skagen gebaut und auf den Namen Nordstjernen getauft segelt sie seit über 100 Jahren über Nord- und Ostsee.</p>
+                    <p>Früher wurde für den Fischfang auf dem Schiff hart gearbeitet, heutzutage bieten wir erlebnisreiche Urlaubstörns auf der Ostsee an. Ob mit sportlichem Ansatz oder gemütliche Fahrten von Hafen zu Hafen, ob lauschiger Ankerplatz oder stimmungsvoller Ausklang im Hafen – eine Fahrt auf unserem Traditionssegler bieten ein vielseitiges Erlebnis.</p>
+                </div>
+                <div class="about-image-2">
+                    <img src="about-image-2.png" alt="Nordstjernen deck and sails">
+                </div>
+            </div>
+            <div class="history-link-wrapper">
+                <a href="#geschichte" class="history-link">ZUR GESCHICHTE</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
