@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildergalerie - Nordstjernen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu nav-left">
+                <li class="nav-item-dropdown">
+                    <a href="../index.html#fakten" class="nav-dropdown-toggle">FAKTEN</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                        <li><a href="einrichtung.html">Einrichtung &amp; Schiffsdaten</a></li>
+                    </ul>
+                </li>
+                <li><a href="bilder.html">BILDER</a></li>
+            </ul>
+            <div class="logo">
+                <a href="../index.html">NORDSTJERNEN</a>
+            </div>
+            <ul class="nav-menu nav-right">
+                <li><a href="toerns.html">TÖRNS</a></li>
+                <li><a href="impressum.html">IMPRESSUM</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero--bilder" id="home">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Bildergalerie</h1>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToNext()">
+            <div class="scroll-text">SCROLLEN</div>
+            <div class="scroll-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro + Featured Image -->
+    <div class="bilder-intro">
+        <div class="bilder-intro-text">
+            <div class="content-header">
+                <div class="content-line"></div>
+                <h2 class="content-eyebrow">GALERIE</h2>
+            </div>
+            <h3 class="bilder-intro-title">Bilder</h3>
+            <p class="bilder-intro-desc">
+                Nachfolgend ein paar Bilder vom Schiff, dem Leben an Bord, dem
+                Segeln an sich, stimmungsvolle Stillleben sowie ein
+                <a href="#">Rundumblick oder virtueller Rundgang</a>.
+            </p>
+        </div>
+        <div class="bilder-featured-img">
+            <img id="bilderFeatured" src="../assets/img/bilder/schiff-featured.png" alt="Nordstjernen">
+        </div>
+    </div>
+
+    <!-- Tabs + Grid -->
+    <div class="bilder-tabs-section">
+        <div class="bilder-tab-bar">
+            <button class="bilder-tab-btn active" data-tab="schiff">DAS SCHIFF</button>
+            <button class="bilder-tab-btn" data-tab="leben">LEBEN</button>
+        </div>
+
+        <!-- Das Schiff grid -->
+        <div class="bilder-grid-panel active" id="tab-schiff">
+            <div class="bilder-grid-item" data-tab="schiff" data-index="0"><img src="../assets/img/bilder/schiff-01.png" alt="Das Schiff 1"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="1"><img src="../assets/img/bilder/schiff-02.png" alt="Das Schiff 2"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="2"><img src="../assets/img/bilder/schiff-03.png" alt="Das Schiff 3"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="3"><img src="../assets/img/bilder/schiff-04.png" alt="Das Schiff 4"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="4"><img src="../assets/img/bilder/schiff-05.png" alt="Das Schiff 5"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="5"><img src="../assets/img/bilder/schiff-06.png" alt="Das Schiff 6"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="6"><img src="../assets/img/bilder/schiff-07.png" alt="Das Schiff 7"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="7"><img src="../assets/img/bilder/schiff-08.png" alt="Das Schiff 8"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="8"><img src="../assets/img/bilder/schiff-09.png" alt="Das Schiff 9"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="9"><img src="../assets/img/bilder/schiff-10.png" alt="Das Schiff 10"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="10"><img src="../assets/img/bilder/schiff-11.png" alt="Das Schiff 11"></div>
+            <div class="bilder-grid-item" data-tab="schiff" data-index="11"><img src="../assets/img/bilder/schiff-12.png" alt="Das Schiff 12"></div>
+        </div>
+
+        <!-- Leben grid -->
+        <div class="bilder-grid-panel" id="tab-leben">
+            <div class="bilder-grid-item" data-tab="leben" data-index="0"><img src="../assets/img/bilder/leben-01.png" alt="Leben an Bord 1"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="1"><img src="../assets/img/bilder/leben-02.png" alt="Leben an Bord 2"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="2"><img src="../assets/img/bilder/leben-03.png" alt="Leben an Bord 3"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="3"><img src="../assets/img/bilder/leben-04.png" alt="Leben an Bord 4"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="4"><img src="../assets/img/bilder/leben-05.png" alt="Leben an Bord 5"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="5"><img src="../assets/img/bilder/leben-06.png" alt="Leben an Bord 6"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="6"><img src="../assets/img/bilder/leben-07.png" alt="Leben an Bord 7"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="7"><img src="../assets/img/bilder/leben-08.png" alt="Leben an Bord 8"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="8"><img src="../assets/img/bilder/leben-09.png" alt="Leben an Bord 9"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="9"><img src="../assets/img/bilder/leben-10.png" alt="Leben an Bord 10"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="10"><img src="../assets/img/bilder/leben-11.png" alt="Leben an Bord 11"></div>
+            <div class="bilder-grid-item" data-tab="leben" data-index="11"><img src="../assets/img/bilder/leben-12.png" alt="Leben an Bord 12"></div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="bilder-lightbox" id="bilderLightbox">
+        <button class="bilder-lightbox-close" id="bilderLbClose">&times;</button>
+        <button class="bilder-lightbox-nav bilder-lightbox-prev" id="bilderLbPrev">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <img class="bilder-lightbox-img" id="bilderLbImg" src="" alt="">
+        <button class="bilder-lightbox-nav bilder-lightbox-next" id="bilderLbNext">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="bilder-lightbox-counter" id="bilderLbCounter"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3 class="footer-company">Nordstjernen gGmbH</h3>
+                <div class="footer-contact">
+                    <p class="footer-address">
+                        <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Torfwiesenau 10<br>
+                        24226 Heikendorf
+                    </p>
+                    <p class="footer-email">
+                        <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 7L12 13L21 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <a href="mailto:gf@nordstjernen.de">gf@nordstjernen.de</a>
+                    </p>
+                    <p class="footer-phone">
+                        <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.92V19.92C22 20.96 21.13 21.83 20.09 21.8C10.03 21.3 3.7 14.97 3.2 4.91C3.17 3.87 4.04 3 5.08 3H8.08C9.08 3 9.91 3.78 10.01 4.78C10.15 6.27 10.47 7.72 11 9.09C11.24 9.67 11.08 10.34 10.59 10.73L8.79 12.21C10.09 14.92 12.08 16.91 14.79 18.21L16.27 16.41C16.66 15.92 17.33 15.76 17.91 16C19.28 16.53 20.73 16.85 22.22 16.99C23.22 17.09 24 17.92 24 18.92V21.92C24 21.95 24 21.97 24 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        0431 / 53 32 36 51
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                            <path d="M13.5 8H15.5V10H13.5V16H11.5V10H9.5V8H11.5V7C11.5 5.89543 12.3954 5 13.5 5H15.5V7H13.5V8Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                            <rect x="8" y="8" width="8" height="8" rx="2" stroke="white" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="2.5" fill="white"/>
+                            <circle cx="15" cy="9" r="0.5" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-content">
+                    <div class="footer-logo-wrapper">
+                        <img src="../assets/img/shared/footer-logo.png" alt="Nordstjernen logo" class="footer-logo">
+                    </div>
+                    <div class="footer-right-text">
+                        <div class="footer-section">
+                            <h4 class="footer-heading">Törnanfragen</h4>
+                            <p class="footer-email">
+                                <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 7L12 13L21 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <a href="mailto:segeln@nordstjernen.de">segeln@nordstjernen.de</a>
+                            </p>
+                        </div>
+                        <div class="footer-section">
+                            <h4 class="footer-heading">Technische Betreuung</h4>
+                            <p class="footer-email">
+                                <svg class="footer-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 7L12 13L21 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <a href="mailto:webmaster@nordstjernen.de">webmaster@nordstjernen.de</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="impressum.html" class="footer-link">Impressum</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../index.html#datenschutz" class="footer-link">Datenschutzerklärung</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../index.html#cookies" class="footer-link">Cookie Einstellungen</a>
+                </div>
+            </div>
+            <button class="scroll-to-top" aria-label="Scroll to top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 19L12 5M5 12L12 5M19 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // ── Tab switching ──────────────────────────────────────────
+        const featuredImgSrc = {
+            schiff: '../assets/img/bilder/schiff-featured.png',
+            leben:  '../assets/img/bilder/leben-featured.png',
+        };
+
+        document.querySelectorAll('.bilder-tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tab = btn.dataset.tab;
+
+                // Update tab buttons
+                document.querySelectorAll('.bilder-tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update grid panels
+                document.querySelectorAll('.bilder-grid-panel').forEach(p => p.classList.remove('active'));
+                document.getElementById('tab-' + tab).classList.add('active');
+
+                // Swap featured image
+                const featured = document.getElementById('bilderFeatured');
+                featured.style.opacity = '0';
+                setTimeout(() => {
+                    featured.src = featuredImgSrc[tab];
+                    featured.style.opacity = '1';
+                }, 200);
+            });
+        });
+
+        // ── Lightbox ───────────────────────────────────────────────
+        const lightbox   = document.getElementById('bilderLightbox');
+        const lbImg      = document.getElementById('bilderLbImg');
+        const lbCounter  = document.getElementById('bilderLbCounter');
+        const lbClose    = document.getElementById('bilderLbClose');
+        const lbPrev     = document.getElementById('bilderLbPrev');
+        const lbNext     = document.getElementById('bilderLbNext');
+
+        let lbImages = []; // array of {src, alt} for current tab
+        let lbIndex  = 0;
+
+        function openLightbox(items, startIndex) {
+            lbImages = items;
+            showLbSlide(startIndex);
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function showLbSlide(i) {
+            lbIndex = (i + lbImages.length) % lbImages.length;
+            lbImg.src = lbImages[lbIndex].src;
+            lbImg.alt = lbImages[lbIndex].alt;
+            lbCounter.textContent = (lbIndex + 1) + ' / ' + lbImages.length;
+        }
+
+        // Collect items per tab when clicked
+        document.querySelectorAll('.bilder-grid-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const tab = item.dataset.tab;
+                const index = parseInt(item.dataset.index, 10);
+                const allInTab = Array.from(
+                    document.querySelectorAll(`.bilder-grid-item[data-tab="${tab}"]`)
+                ).map(el => ({
+                    src: el.querySelector('img').src,
+                    alt: el.querySelector('img').alt,
+                }));
+                openLightbox(allInTab, index);
+            });
+        });
+
+        lbClose.addEventListener('click', closeLightbox);
+        lbPrev.addEventListener('click', () => showLbSlide(lbIndex - 1));
+        lbNext.addEventListener('click', () => showLbSlide(lbIndex + 1));
+
+        // Close on backdrop click (not on img or buttons)
+        lightbox.addEventListener('click', e => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', e => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'ArrowLeft')  showLbSlide(lbIndex - 1);
+            if (e.key === 'ArrowRight') showLbSlide(lbIndex + 1);
+            if (e.key === 'Escape')     closeLightbox();
+        });
+    </script>
+</body>
+</html>

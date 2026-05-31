@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "nordstjernen": {
+      "command": "node",
+      "args": ["server/mcp-server.js"],
+      "env": {}
+    }
+  }
+}
