@@ -239,6 +239,7 @@ body {
 /* Per-page hero background overrides (reuses all .hero / .hero-title styling) */
 .hero--geschichte .hero-background {
     background-image: url('../img/geschichte/geschichte-hero.png');
+    background-position: center 50%;
 }
 
 .hero--einrichtung .hero-background {
@@ -264,7 +265,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 50%, rgba(30, 58, 95, 0.6) 85%, #1e3a5f 100%);
     z-index: 2;
 }
 
